@@ -17,7 +17,7 @@ return [
     // 应用调试模式
     'app_debug'              => true,
     // 应用Trace
-    'app_trace'              => true,
+    'app_trace'              => false,
     // 应用模式状态
     'app_status'             => '',
     // 是否支持多模块
@@ -147,7 +147,7 @@ return [
         '__ROOT__' => '',
         '__PUBLIC__' => '',
         '__ADMIN__' => '/static/admin',
-        '__UPLOADS__' => '/static/uploads',
+        '__UPLOADS__' => '/uploads',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
@@ -245,4 +245,7 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+
+    //上传文件路径配置
+    'uploads_path' => ROOT_PATH . 'public/uploads'
 ];

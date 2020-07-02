@@ -21,3 +21,6 @@
 //];
 
 use think\Route;
+
+//图片上传
+Route::post('/upload_picture','admin/Upload/upload_image');
